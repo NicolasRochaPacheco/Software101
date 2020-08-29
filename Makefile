@@ -32,3 +32,8 @@ TP3:
 	$(ASM) $(TP3_SRC) -o obj/TP3
 	$(OBJCOPY) -O verilog obj/TP3 hex/tp3.hex
 	cp hex/tp3.hex ../Core101/rtl/MEM/tp3.hex
+
+TP_JAL:
+	$(ASM) asm/TP_JAL.asm -o obj/TP_JAL
+	$(OBJCOPY) -O verilog obj/TP_JAL hex/tp_jal.hex
+	cp hex/tp_jal.hex ../Core101/rtl/MEM/tp_jal.hex

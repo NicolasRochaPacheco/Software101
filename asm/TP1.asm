@@ -1,5 +1,5 @@
 # File asm/tp1.asm "Test Program 1 (TP1)"
-# TODO Must include all arithmetic and logical
+# Must include all arithmetic and logical
 # operations to be considered an approved test
 
 
