@@ -22,7 +22,7 @@ To check the Docker instalation:
 	$ docker run hello-world
 
 ## Software101 Docker Setup
-To setup the Docker Software101 image, please run:
+To setup the Docker Software101 image run the following console comands. Make sure that this folder is your current directory and mind the dot at the end.
 
 	$ docker build -t software101:latest .
 
@@ -31,5 +31,3 @@ This command will build an image for Software101. To run an instance of the imag
 	$ docker run -it --name software101 software101:latest
 
 Once the container is launched, you will come up with a bash console with a different prefix from your computer. This means that you are working inside the Software101 container.
-
-## Software101 Container Usage
