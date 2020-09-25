@@ -36,13 +36,17 @@ RUN apt-get install -y \
 	zlib1g-dev\
 	libexpat-dev
 
-
+# Clones the RISC-V GNU Toolchain repository in opt folder
 WORKDIR /opt/
 RUN git clone --recursive https://github.com/riscv/riscv-gnu-toolchain
-
 WORKDIR /opt/riscv-gnu-toolchain
 RUN git submodule update --init --recursive
+
+# Configures and installs the RISC-V GNU Toolchain
 RUN ./configure --prefix=/opt/riscv --with-arch=rv32i --with-abi=ilp32
 RUN make linux
+
+# Sets up the PATH variable to use the Toolchain
+ENV PATH="/opt/riscv/rv32i/bin:${PATH}"
 
 
