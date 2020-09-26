@@ -1,7 +1,7 @@
 # Core101 Docker Toolchain Documentation
 This readme file is intended to explain how to use the RV32I software toolchain for Core101. The instalation, setup and use processes will be discussed in the following sections. Make sure that you read this document entirely before executing any steps of the process.
 
-## Docker instalation
+## Docker installation
 To install Docker on Ubuntu, please run the following console commands:
 
 	$ sudo apt-get update
@@ -35,7 +35,7 @@ Once the container is launched, you will come up with a bash console with a diff
 ## Software101 Container Usage
 To run the container, you must execute:
 
-	$ docker start -ai core101
+	$ docker start -ai software101
 
 Keep in mind that the `run` command will initiate a new container while the `start` command will use an existent container. As long as you are inside the container, you will be able to use the RISC-V GNU Toolchain with the RV32I spec target. If you want to exit the container, just run:
 
